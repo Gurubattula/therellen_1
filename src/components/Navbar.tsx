@@ -134,7 +134,7 @@ export default function Navbar() {
                   <span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-therallen-blue transition-all duration-300 group-hover:w-full group-hover:left-0" />
 
                   {/* Dropdown Menu */}
-                  {hasDropdown && (
+                  {link.dropdown && (
                     <div className="absolute top-full left-0 mt-1.5 w-60 bg-white border border-slate-100 rounded-2xl shadow-xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform origin-top scale-95 group-hover:scale-100">
                       {link.dropdown.map((subLink) => (
                         <a
@@ -216,7 +216,7 @@ export default function Navbar() {
                         </motion.div>
                         
                         {/* Sub links for mobile */}
-                        {hasDropdown && isOpen && (
+                        {link.dropdown && isOpen && (
                           <div className="flex flex-col pl-4 border-l border-slate-100 gap-2 mt-1 mb-3">
                             {link.dropdown.map((subLink) => (
                               <a
