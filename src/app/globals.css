@@ -97,6 +97,13 @@ body {
   border: 1px solid rgba(0, 87, 217, 0.08);
 }
 
+.mask-radial-desktop {
+  @media (min-width: 1024px) {
+    mask-image: radial-gradient(circle closest-side, black 45%, transparent 95%);
+    -webkit-mask-image: radial-gradient(circle closest-side, black 45%, transparent 95%);
+  }
+}
+
 .glassmorphism-dark {
   background: rgba(17, 17, 17, 0.75);
   backdrop-filter: blur(12px);
