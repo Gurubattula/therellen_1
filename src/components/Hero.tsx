@@ -8,10 +8,10 @@ export default function Hero() {
       id="home"
       className="relative w-full bg-white pt-[20px] lg:pt-[24px] px-6 lg:px-8 overflow-hidden"
     >
-      <div className="w-full max-w-7xl mx-auto z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-8 pt-0 pb-16 relative">
+      <div className="w-full max-w-7xl mx-auto z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-8 pt-0 pb-8 relative">
         
         {/* Left Side Column: Static Text (z-20 to overlay above image) */}
-        <div className="w-full lg:w-[45%] flex flex-col items-center lg:items-start text-center lg:text-left z-20 relative py-12 md:py-16 lg:py-0">
+        <div className="w-full lg:w-[45%] flex flex-col items-center lg:items-start text-center lg:text-left z-20 relative pt-12 md:pt-16 pb-4 md:pb-6 lg:py-0">
 
 
           <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold text-therallen-black leading-[1.15] mb-6 tracking-tight">

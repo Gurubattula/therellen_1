@@ -108,7 +108,7 @@ export default function Innovation() {
   ];
 
   return (
-    <section id="innovation" className="relative py-24 bg-white overflow-hidden">
+    <section id="innovation" className="relative pt-12 pb-24 bg-white overflow-hidden">
       {/* Background cyan radial highlight */}
       <div className="absolute top-[40%] left-[-10%] w-[50%] h-[50%] rounded-full bg-therallen-cyan/5 blur-[120px] pointer-events-none" />
 
