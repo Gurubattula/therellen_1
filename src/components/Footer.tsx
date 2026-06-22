@@ -1,6 +1,7 @@
 'use client';
 
-import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin, ExternalLink, Download } from 'lucide-react';
+import { BROCHURE } from '@/lib/downloads';
 
 export default function Footer() {
   const offices = [
@@ -27,6 +28,7 @@ export default function Footer() {
     { name: 'Home', href: '#home' },
     { name: 'Innovation', href: '#innovation' },
     { name: 'Partnerships', href: '#partnerships' },
+    { name: 'Download Brochure', href: BROCHURE.href, download: BROCHURE.filename },
   ];
 
   return (
@@ -76,10 +78,15 @@ export default function Footer() {
                 <a
                   key={link.name}
                   href={link.href}
+                  {...('download' in link && link.download ? { download: link.download } : {})}
                   className="text-slate-400 hover:text-white text-sm transition-colors flex items-center gap-1 group"
                 >
                   <span>{link.name}</span>
-                  <ExternalLink size={10} className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                  {'download' in link && link.download ? (
+                    <Download size={10} className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                  ) : (
+                    <ExternalLink size={10} className="opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+                  )}
                 </a>
               ))}
             </nav>

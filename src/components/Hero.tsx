@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import { Download } from 'lucide-react';
+import { BROCHURE } from '@/lib/downloads';
 
 export default function Hero() {
   return (
@@ -23,9 +25,18 @@ export default function Hero() {
             Global Healthcare
           </h1>
 
-          <p className="text-slate-600 text-[16px] sm:text-lg leading-relaxed max-w-xl mb-0">
+          <p className="text-slate-600 text-[16px] sm:text-lg leading-relaxed max-w-xl mb-8">
             Research-driven pharmaceutical solutions delivering complex formulations, advanced pellet technologies, and scalable manufacturing excellence.
           </p>
+
+          <a
+            href={BROCHURE.href}
+            download={BROCHURE.filename}
+            className="inline-flex items-center justify-center gap-2 bg-therallen-blue hover:bg-opacity-95 text-white font-semibold px-6 py-3 rounded-full shadow-lg shadow-blue-500/10 hover:shadow-blue-500/20 hover:-translate-y-0.5 transition-all duration-300"
+          >
+            <Download size={18} />
+            Download Brochure
+          </a>
         </div>
 
         {/* Right Side Column: Image (z-10, overlays under text on mobile/tablet) */}
