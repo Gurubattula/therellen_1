@@ -1,20 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --therallen-blue: #0F766E;
-  --therallen-cyan: #14B8A6;
-  --therallen-green: #115E59;
-  --therallen-magenta: #0D9488;
-  --therallen-orange: #2DD4BF;
-  --therallen-yellow: #99F6E4;
-  --therallen-black: #334155;
+  --therallen-blue: #16A34A;
+  --therallen-cyan: #22C55E;
+  --therallen-green: #15803D;
+  --therallen-magenta: #059669;
+  --therallen-orange: #34D399;
+  --therallen-yellow: #A7F3D0;
+  --therallen-black: #1F2937;
   --therallen-white: #FFFFFF;
   --therallen-light: #F8FAFC;
-  --therallen-secondary: #64748B;
-  --therallen-border: #E2E8F0;
+  --therallen-secondary: #4B5563;
+  --therallen-border: #E5E7EB;
   
   --background: #FFFFFF;
-  --foreground: #64748B;
+  --foreground: #4B5563;
 }
 
 @theme inline {
@@ -29,12 +29,17 @@
   --color-therallen-light: var(--therallen-light);
   --color-therallen-secondary: var(--therallen-secondary);
   
-  --color-slate-50: var(--therallen-light);
-  --color-slate-100: var(--therallen-border);
-  --color-slate-200: var(--therallen-border);
-  --color-slate-500: var(--therallen-secondary);
-  --color-slate-600: var(--therallen-secondary);
-  --color-slate-950: var(--therallen-black);
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #E5E7EB;
+  --color-slate-200: #E5E7EB;
+  --color-slate-300: #D1D5DB;
+  --color-slate-400: #9CA3AF;
+  --color-slate-500: #4B5563;
+  --color-slate-600: #4B5563;
+  --color-slate-700: #374151;
+  --color-slate-800: #1F2937;
+  --color-slate-900: #1F2937;
+  --color-slate-950: #1F2937;
   
   --font-sans: var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-geist-mono), monospace;
@@ -70,7 +75,7 @@
   background: var(--therallen-white);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(15, 118, 110, 0.15);
+  background: rgba(22, 163, 74, 0.15);
   border-radius: 4px;
   border: 2px solid var(--therallen-white);
 }
@@ -112,7 +117,7 @@ html, body {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(15, 118, 110, 0.08);
+  border: 1px solid rgba(22, 163, 74, 0.08);
 }
 
 .mask-radial-desktop {
@@ -123,7 +128,7 @@ html, body {
 }
 
 .glassmorphism-dark {
-  background: rgba(15, 23, 42, 0.75);
+  background: rgba(31, 41, 55, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -131,11 +136,11 @@ html, body {
 
 /* Custom class overrides to support split colors */
 .bg-therallen-black {
-  background-color: #0F172A !important;
+  background-color: #1F2937 !important;
 }
 
 .text-therallen-black {
-  color: #334155 !important;
+  color: #1F2937 !important;
 }
 
 /* Selection style */
