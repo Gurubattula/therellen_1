@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --therallen-blue: #059669;
-  --therallen-cyan: #10B981;
-  --therallen-green: #0AA14A;
-  --therallen-magenta: #D92BBE;
-  --therallen-orange: #F85A3A;
-  --therallen-yellow: #F8C64A;
-  --therallen-black: #111827;
+  --therallen-blue: #0F766E;
+  --therallen-cyan: #14B8A6;
+  --therallen-green: #115E59;
+  --therallen-magenta: #0D9488;
+  --therallen-orange: #2DD4BF;
+  --therallen-yellow: #99F6E4;
+  --therallen-black: #334155;
   --therallen-white: #FFFFFF;
   --therallen-light: #F8FAFC;
-  --therallen-secondary: #6B7280;
+  --therallen-secondary: #64748B;
+  --therallen-border: #E2E8F0;
   
   --background: #FFFFFF;
-  --foreground: #111827;
+  --foreground: #64748B;
 }
 
 @theme inline {
@@ -29,6 +30,8 @@
   --color-therallen-secondary: var(--therallen-secondary);
   
   --color-slate-50: var(--therallen-light);
+  --color-slate-100: var(--therallen-border);
+  --color-slate-200: var(--therallen-border);
   --color-slate-500: var(--therallen-secondary);
   --color-slate-600: var(--therallen-secondary);
   --color-slate-950: var(--therallen-black);
@@ -67,7 +70,7 @@
   background: var(--therallen-white);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(5, 150, 105, 0.15);
+  background: rgba(15, 118, 110, 0.15);
   border-radius: 4px;
   border: 2px solid var(--therallen-white);
 }
@@ -100,7 +103,7 @@ html.lenis body {
 /* Base Body Styles */
 html, body {
   background: var(--therallen-white);
-  color: var(--therallen-black);
+  color: var(--therallen-secondary);
   overflow-x: hidden;
 }
 
@@ -109,7 +112,7 @@ html, body {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(5, 150, 105, 0.08);
+  border: 1px solid rgba(15, 118, 110, 0.08);
 }
 
 .mask-radial-desktop {
@@ -120,10 +123,19 @@ html, body {
 }
 
 .glassmorphism-dark {
-  background: rgba(17, 24, 39, 0.75);
+  background: rgba(15, 23, 42, 0.75);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Custom class overrides to support split colors */
+.bg-therallen-black {
+  background-color: #0F172A !important;
+}
+
+.text-therallen-black {
+  color: #334155 !important;
 }
 
 /* Selection style */
