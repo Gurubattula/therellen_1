@@ -22,7 +22,7 @@ export default function WhitePapersPage() {
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl font-bold text-therallen-black mb-4 tracking-tight">
-              White Papers &amp; Downloads
+              White Papers &amp; <span className="bg-gradient-to-r from-therallen-blue to-therallen-cyan bg-clip-text text-transparent">Downloads</span>
             </h1>
             <div className="w-12 h-1 bg-gradient-to-r from-therallen-blue to-therallen-cyan rounded-full mx-auto mb-6" />
             <p className="text-slate-500 text-[15px] sm:text-base leading-relaxed max-w-lg mx-auto">
@@ -48,7 +48,7 @@ export default function WhitePapersPage() {
             <a
               href={BROCHURE.href}
               download={BROCHURE.filename}
-              className="inline-flex items-center justify-center gap-2 bg-therallen-blue hover:bg-opacity-95 text-white font-semibold px-6 py-3 rounded-full shadow-lg shadow-blue-500/10 hover:shadow-blue-500/20 hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap w-full sm:w-auto"
+              className="inline-flex items-center justify-center gap-2 bg-therallen-blue hover:bg-opacity-95 text-white font-semibold px-6 py-3 rounded-full shadow-lg shadow-therallen-blue/10 hover:shadow-therallen-blue/20 hover:-translate-y-0.5 transition-all duration-300 whitespace-nowrap w-full sm:w-auto"
             >
               <Download size={18} />
               Download Brochure

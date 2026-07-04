@@ -52,7 +52,7 @@ export default async function CatchAllPage({ params }: PageProps) {
 
           <a
             href="/"
-            className="inline-flex items-center justify-center bg-therallen-blue hover:bg-opacity-95 text-white font-semibold px-6 py-3 rounded-full shadow-lg shadow-blue-500/10 hover:shadow-blue-500/20 hover:-translate-y-0.5 transition-all duration-300"
+            className="inline-flex items-center justify-center bg-therallen-blue hover:bg-opacity-95 text-white font-semibold px-6 py-3 rounded-full shadow-lg shadow-therallen-blue/10 hover:shadow-therallen-blue/20 hover:-translate-y-0.5 transition-all duration-300"
           >
             Return to Homepage
           </a>

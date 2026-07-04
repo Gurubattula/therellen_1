@@ -111,7 +111,7 @@ export default function Partnerships() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl font-bold text-therallen-black tracking-tight mb-6"
           >
-            Growing Together Globally
+            Growing Together <span className="bg-gradient-to-r from-therallen-blue to-therallen-cyan bg-clip-text text-transparent">Globally</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -173,7 +173,7 @@ export default function Partnerships() {
             The Therallen Advantage
           </span>
           <h3 className="text-2xl sm:text-3xl font-bold text-therallen-black tracking-tight">
-            Why Choose Therallen
+            Why Choose <span className="bg-gradient-to-r from-therallen-blue to-therallen-cyan bg-clip-text text-transparent">Therallen</span>
           </h3>
         </div>
 

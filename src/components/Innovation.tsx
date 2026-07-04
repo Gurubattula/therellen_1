@@ -46,42 +46,42 @@ export default function Innovation() {
       title: 'Pellet Technologies',
       description: 'Expertise in pelletisation processes including extrusion-spheronisation, powder/solution layering, and fluid bed coating for controlled release systems.',
       icon: Layers,
-      color: 'from-blue-500/10 to-cyan-500/10',
+      color: 'from-therallen-blue/10 to-therallen-cyan/10',
       image: '/pellet_technologies.jpg',
     },
     {
       title: 'MUPS Development',
       description: 'Multi-Unit Particulate Systems (MUPS) formulation design engineered for consistent compression, preventing coating damage and ensuring uniform release profile.',
       icon: HelpCircle, // Customized for MUPS particulates
-      color: 'from-cyan-500/10 to-blue-500/10',
+      color: 'from-therallen-cyan/10 to-therallen-blue/10',
       image: '/mups_development.jpg',
     },
     {
       title: 'Patent Aware Formulations',
       description: 'IP-guided formulation development to create non-infringing pathways, ensuring solid regulatory positions in global high-entry barrier markets.',
       icon: Shield,
-      color: 'from-blue-500/10 to-indigo-500/10',
+      color: 'from-therallen-blue/10 to-therallen-magenta/10',
       image: '/patent_aware_formulations.jpg',
     },
     {
       title: 'Nitrosamine-Free Products',
       description: 'State-of-the-art impurity profiling and raw material risk management to guarantee nitrosamine-free and genotoxic-impurity-safe formulations.',
       icon: Sparkles,
-      color: 'from-cyan-500/10 to-teal-500/10',
+      color: 'from-therallen-cyan/10 to-therallen-orange/10',
       image: '/nitrosamine_free_lab.png',
     },
     {
       title: 'Analytical Validation',
       description: 'Method development, validation, and stability study setups conforming to international ICH guidelines, ensuring global compliance.',
       icon: Beaker,
-      color: 'from-indigo-500/10 to-blue-500/10',
+      color: 'from-therallen-magenta/10 to-therallen-orange/10',
       image: '/analytical_validation.png',
     },
     {
       title: 'Scale-Up Expertise',
       description: 'Seamless technology transfer from laboratory scale to pilot batches and final commercial scale-up under rigorous cGMP environments.',
       icon: TrendingUp,
-      color: 'from-teal-500/10 to-cyan-500/10',
+      color: 'from-therallen-green/10 to-therallen-yellow/10',
       image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&q=80&w=800',
     },
   ];
@@ -137,7 +137,7 @@ export default function Innovation() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-3xl sm:text-4xl font-bold text-therallen-black tracking-tight mb-6"
           >
-            Innovation Driven Development
+            Innovation Driven <span className="bg-gradient-to-r from-therallen-blue to-therallen-cyan bg-clip-text text-transparent">Development</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -206,7 +206,7 @@ export default function Innovation() {
             End-To-End Execution
           </span>
           <h3 className="text-2xl sm:text-3xl font-bold text-therallen-black tracking-tight">
-            Development Process Timeline
+            Development Process <span className="bg-gradient-to-r from-therallen-blue to-therallen-cyan bg-clip-text text-transparent">Timeline</span>
           </h3>
         </div>
 

@@ -32,7 +32,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="relative bg-[#03112E] text-white pt-24 pb-8 overflow-hidden">
+    <footer id="contact" className="relative bg-therallen-black text-white pt-24 pb-8 overflow-hidden">
       {/* Background Soft Glow */}
       <div className="absolute top-0 right-0 w-[40%] h-[40%] rounded-full bg-therallen-cyan/5 blur-[100px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[30%] h-[30%] rounded-full bg-therallen-blue/10 blur-[80px] pointer-events-none" />
